@@ -165,6 +165,10 @@
   }
   .compartment:hover{ transform:translateY(-6px); box-shadow:0 16px 30px rgba(110,30,35,.15); border-color:var(--marigold); }
   .compartment.has-photo{ background-size:cover; background-position:center; }
+  .compartment:not(.has-photo):not(.center-item){
+    background-image: radial-gradient(circle, rgba(166,124,61,.18) 1.5px, transparent 1.5px);
+    background-size: 14px 14px;
+  }
   .compartment .tag{
     font-family:'Space Mono',monospace; font-size:.65rem; letter-spacing:.1em; text-transform:uppercase;
     color:var(--brass); margin-bottom:6px;
@@ -236,7 +240,7 @@
       <a href="#why-us">Why Us</a>
       <a href="#contact">Visit / Order</a>
     </div>
-    <a class="cta-btn" href="https://wa.me/919999999999" target="_blank">Order on WhatsApp</a>
+    <a class="cta-btn" href="tel:+912512705668">📞 Call to Order</a>
     <button class="menu-toggle">☰</button>
   </nav>
 </header>
@@ -246,7 +250,7 @@
   <h1>Namkeen that's been part of <em>Ulhasnagar's</em> teatime since three generations.</h1>
   <p>From crisp Bikaneri bhujia to premium cashews and pistachios — Gemini Namkeen has served the same honest recipes since 1961, right opposite Sona Market.</p>
   <div class="hero-actions">
-    <a class="cta-btn" href="https://wa.me/919999999999" target="_blank">🛵 Order on WhatsApp</a>
+    <a class="cta-btn" href="tel:+912512705668">📞 Call to Order</a>
     <a class="btn-outline" href="#products">Explore Products</a>
   </div>
   <div class="hero-stats">
@@ -270,7 +274,7 @@
       </div>
     </div>
     <div class="heritage-photo">
-      <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAEucHrVwecK_b3Bx8wv0fkKA-nyQwTitI6C9o3DTS6SdjgWzuHXDvk7O6Ss-uQlOqG3TcVQRcxhGP-eMpg96zsMUyic7WyTVbuVm276E7XGXIFF7zxuxOoTVYQva4UhWNaqqsjo=w800-rw" alt="Gemini Namkeen storefront">
+      <img src="images/storefront-ai.png" alt="Gemini Namkeen storefront">
       <span class="cap">Gemini Namkeen, Ulhasnagar</span>
     </div>
   </div>
@@ -288,10 +292,10 @@
     <div class="thali-wrap">
       <div class="thali">
         <div class="compartment has-photo" style="background-image:linear-gradient(rgba(251,244,230,.15),rgba(251,244,230,.92) 75%), url('images/bhujia-mix.png');"><span class="tag">Bestseller</span><h3>Aloo Bhujia</h3><p>Crispy potato sticks with spices — the counter's most-asked-for namkeen.</p></div>
-        <div class="compartment"><span class="tag">Classic</span><h3>Chana Dal</h3><p>Sweet and savoury roasted gram dal snack.</p></div>
+        <div class="compartment has-photo" style="background-image:linear-gradient(rgba(251,244,230,.15),rgba(251,244,230,.92) 75%), url('images/chana-dal.png');"><span class="tag">Classic</span><h3>Chana Dal</h3><p>Sweet and savoury roasted gram dal snack.</p></div>
         <div class="center-item" style="background-image:linear-gradient(rgba(110,30,35,.55),rgba(110,30,35,.88)), url('images/variety-spread.png'); background-size:cover; background-position:center;"><span class="tag">Signature</span><h3>Full Namkeen Spread</h3><p>Ten+ varieties made fresh — the house blend that's kept Ulhasnagar coming back.</p></div>
-        <div class="compartment"><span class="tag">Tangy</span><h3>Khatta Meetha</h3><p>The classic sweet-and-sour mixture, a teatime staple.</p></div>
-        <div class="compartment"><span class="tag">Crunchy</span><h3>Moong Dal</h3><p>Crisp moong dal namkeen, lightly spiced.</p></div>
+        <div class="compartment has-photo" style="background-image:linear-gradient(rgba(251,244,230,.15),rgba(251,244,230,.92) 75%), url('images/khatta-meetha.png');"><span class="tag">Tangy</span><h3>Khatta Meetha</h3><p>The classic sweet-and-sour mixture, a teatime staple.</p></div>
+        <div class="compartment has-photo" style="background-image:linear-gradient(rgba(251,244,230,.15),rgba(251,244,230,.92) 75%), url('images/moong-dal.png');"><span class="tag">Crunchy</span><h3>Moong Dal</h3><p>Crisp moong dal namkeen, lightly spiced.</p></div>
         <div class="compartment has-photo" style="background-image:linear-gradient(rgba(251,244,230,.15),rgba(251,244,230,.92) 75%), url('images/dryfruits-bowls.png');"><span class="tag">Premium</span><h3>Dry Fruits</h3><p>Cashew &amp; pistachio, hand-picked and sold fresh by weight.</p></div>
         <div class="compartment has-photo" style="background-image:linear-gradient(rgba(251,244,230,.15),rgba(251,244,230,.92) 75%), url('images/kaju-katli.png');"><span class="tag">Sweet</span><h3>Kaju Katli</h3><p>Classic cashew fudge, made fresh in-house.</p></div>
         <div class="compartment has-photo" style="background-image:linear-gradient(rgba(251,244,230,.15),rgba(251,244,230,.92) 75%), url('images/bhakarwadi.png');"><span class="tag">Snack</span><h3>Bhakarwadi</h3><p>Spicy-sweet rolled snack, a Maharashtrian favourite.</p></div>
@@ -323,14 +327,13 @@
   <div class="section-inner contact-grid">
     <div>
       <span class="eyebrow">Visit or order</span>
-      <h2>Come by the counter, or order on WhatsApp.</h2>
+      <h2>Come by the counter, or give us a call.</h2>
       <div class="info-row"><b>Address</b><span>Gemini Namkeen, Opposite Sona Market, Ulhasnagar No. 2, Thane — 421002</span></div>
-      <div class="info-row"><b>Hours</b><span>Open daily — timings to be confirmed</span></div>
-      <div class="info-row"><b>Phone</b><span>To be confirmed</span></div>
+      <div class="info-row"><b>Hours</b><span>10:00 AM – 8:00 PM, daily</span></div>
+      <div class="info-row"><b>Phone</b><span>0251-2705668</span></div>
       <div class="info-row"><b>Rating</b><span>4.6★ on Justdial &amp; magicpin</span></div>
       <div class="contact-cta">
-        <a class="cta-btn" href="https://wa.me/919999999999" target="_blank">🛵 Order on WhatsApp</a>
-        <a class="btn-outline" style="border-color:rgba(251,244,230,.4); color:#fff;" href="tel:+919999999999">📞 Call the shop</a>
+        <a class="cta-btn" href="tel:+912512705668">📞 Call the shop</a>
       </div>
     </div>
     <div class="map-box">
